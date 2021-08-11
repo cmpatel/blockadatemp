@@ -266,11 +266,11 @@
 		4EF7EDF3240E8FBF001FA02E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7EDF2240E8FBF001FA02E /* ContentView.swift */; };
 		4EF7EDF5240E9E95001FA02E /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7EDF4240E9E95001FA02E /* Resources.swift */; };
 		4EF7EE032410E138001FA02E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7EE022410E138001FA02E /* MainView.swift */; };
+		8137133026C37FBB00B850EE /* libengine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8137132F26C37FBB00B850EE /* libengine.a */; };
+		8137133126C37FBB00B850EE /* libengine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8137132F26C37FBB00B850EE /* libengine.a */; };
 		81980FE726C0EBC600329D77 /* IOSNetworkExtension.appex in Resources */ = {isa = PBXBuildFile; fileRef = 81980FE626C0EBC600329D77 /* IOSNetworkExtension.appex */; };
-		B25D04CF248FB73B00CC3EF7 /* libengine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2240DD92417FA8900F13E97 /* libengine.a */; };
 		B285FFFD248F8AE5003EAA35 /* PacketLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B285FFFC248F8AE5003EAA35 /* PacketLoop.swift */; };
 		B2EED218241BE4A800407601 /* hosts.txt in Resources */ = {isa = PBXBuildFile; fileRef = B2EED216241B8D6500407601 /* hosts.txt */; };
-		B2F720922418F4E20002B88E /* libengine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2240DD92417FA8900F13E97 /* libengine.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -491,11 +491,11 @@
 		4EF7EDF2240E8FBF001FA02E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4EF7EDF4240E9E95001FA02E /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		4EF7EE022410E138001FA02E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8137132F26C37FBB00B850EE /* libengine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libengine.a; sourceTree = "<group>"; };
 		81980FE626C0EBC600329D77 /* IOSNetworkExtension.appex */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.app-extension"; path = IOSNetworkExtension.appex; sourceTree = "<group>"; };
 		B2240DBF2417F66D00F13E97 /* IOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		B2240DC02417F66D00F13E97 /* libengine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libengine.h; sourceTree = "<group>"; };
 		B2240DC72417F83100F13E97 /* liblibengine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibengine.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2240DD92417FA8900F13E97 /* libengine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libengine.a; path = Engine/libengine.a; sourceTree = "<group>"; };
 		B285FFFC248F8AE5003EAA35 /* PacketLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketLoop.swift; sourceTree = "<group>"; };
 		B2EED216241B8D6500407601 /* hosts.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hosts.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -513,7 +513,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ED3445623E1B0D90075B796 /* NetworkExtension.framework in Frameworks */,
-				B2F720922418F4E20002B88E /* libengine.a in Frameworks */,
+				8137133026C37FBB00B850EE /* libengine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,7 +530,7 @@
 			files = (
 				4ED3446723E1B1520075B796 /* NetworkExtension.framework in Frameworks */,
 				4ED3446A23E1B7430075B796 /* libresolv.tbd in Frameworks */,
-				B25D04CF248FB73B00CC3EF7 /* libengine.a in Frameworks */,
+				8137133126C37FBB00B850EE /* libengine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -789,7 +789,6 @@
 		4ED3443D23E190910075B796 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B2240DD92417FA8900F13E97 /* libengine.a */,
 				81980FE626C0EBC600329D77 /* IOSNetworkExtension.appex */,
 				4ED3445323E1B0A60075B796 /* NetworkExtension.framework */,
 				4ED3443E23E190910075B796 /* libresolv.tbd */,
@@ -842,6 +841,7 @@
 		B2240DBB2417F5DA00F13E97 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				8137132F26C37FBB00B850EE /* libengine.a */,
 				B2EED216241B8D6500407601 /* hosts.txt */,
 				B2240DC02417F66D00F13E97 /* libengine.h */,
 				B2240DBF2417F66D00F13E97 /* IOS-Bridging-Header.h */,
